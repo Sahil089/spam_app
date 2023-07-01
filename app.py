@@ -4,7 +4,6 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-nltk.download('stopwords')
 app = Flask(__name__)
 
 def load_spam_classifier():
