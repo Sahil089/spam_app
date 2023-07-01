@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pickle
 import re
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 app = Flask(__name__)
