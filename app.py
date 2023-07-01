@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 import pickle
 import re
 import nltk
-nltk.data.path.append('/home/sbx_user1051/nltk_data')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
