@@ -1,6 +1,6 @@
 flask
 numpy
-sklearn
 scikit-learn
+sklearn
 gunicorn
 nltk
