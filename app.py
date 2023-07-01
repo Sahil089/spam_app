@@ -33,9 +33,9 @@ def predict():
     msg = request.form.get('msg')
     result = ['Wait a minute, this is a SPAM!', 'Ohhh, this is a normal message.']
     if predict_spam(msg):
-        return jsonify({'prediction': result[0]})
+        return jsonify({'prediction': str(result[0])})
     else:
-        return jsonify({'prediction': result[1]})
+        return jsonify({'prediction': str(result[1])})
 
 if __name__ == '__main__':
     app.run(debug=True)
